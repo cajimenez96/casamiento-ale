@@ -1,0 +1,367 @@
+Hero Section Styles
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  background-color: #F8F6F2;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.hero-row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Left Column - Text Content */
+.hero-text-column {
+  width: 50%;
+  padding: 4rem 3rem;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wpo-static-hero-inner {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+/* Shape Elements */
+.shape-1 {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.shape-2 {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* Names */
+.slide-title h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: #2C2C2C;
+  margin: 2rem 0 1rem 0;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+/* Subtitle */
+.slide-text p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+/* Countdown Timer Styles */
+.wpo-wedding-date {
+  margin: 2rem 0;
+}
+
+.clock-grids {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#clock {
+  display: flex;
+  gap: 1.5rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.box {
+  text-align: center;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.time {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #9CAF88;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.box span {
+  font-size: 0.85rem;
+  color: #666;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Right Column - Image */
+.hero-image-column {
+  width: 50%;
+  padding: 2rem;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 600px;
+}
+
+/* Background Shape */
+.bg-shape {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('../src/assets/img/bg-shape.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image {
+  position: relative;
+  z-index: 2;
+  background: white;
+  padding: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.hero-image img {
+  display: block;
+  /* width: 100%; */
+  /* height: 100%; */
+  object-fit: cover;
+}
+
+/* Corner Shapes */
+.corner-shape {
+  position: absolute;
+  z-index: 2;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.corner-shape img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.corner-top-left {
+  top: 10px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+}
+
+.corner-top-right {
+  top: 10px;
+  right: 30px;
+  width: 100px;
+  height: 100px;
+}
+
+.corner-bottom-left {
+  bottom: 40px;
+  left: 60px;
+  width: 100px;
+  height: 100px;
+}
+
+.corner-bottom-right {
+  bottom: 100px;
+  right: 100px;
+  width: 231px;
+  height: 180px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .hero-names {
+    font-size: 3rem;
+  }
+  
+  .countdown-number {
+    font-size: 1.8rem;
+  }
+  
+  .corner-shape {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .corner-bottom-right {
+    width: 120px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-row {
+    flex-direction: column;
+  }
+  
+  .hero-text-column {
+    width: 100%;
+    padding: 3rem 2rem;
+    height: 50vh;
+  }
+  
+  .hero-image-column {
+    width: 100%;
+    height: 50vh;
+    padding: 1rem;
+  }
+  
+  .hero-names {
+    font-size: 2.5rem;
+  }
+  
+  .countdown-grid {
+    gap: 1rem;
+  }
+  
+  .countdown-number {
+    font-size: 1.6rem;
+  }
+  
+  .corner-shape {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text-column {
+    width: 100%;
+    padding: 2rem 1rem;
+    height: 50vh;
+  }
+  
+  .hero-names {
+    font-size: 2rem;
+    margin: 1rem 0 0.5rem 0;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .countdown-grid {
+    gap: 0.75rem;
+  }
+  
+  .countdown-number {
+    font-size: 1.4rem;
+  }
+  
+  .countdown-label {
+    font-size: 0.75rem;
+  }
+  
+  .corner-shape {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .corner-bottom-right {
+    width: 90px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-names {
+    font-size: 1.8rem;
+  }
+  
+  .countdown-grid {
+    gap: 0.5rem;
+  }
+  
+  .countdown-number {
+    font-size: 1.2rem;
+  }
+  
+  .countdown-label {
+    font-size: 0.7rem;
+  }
+  
+  .corner-shape {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .corner-bottom-right {
+    width: 75px;
+    height: 60px;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* WOW Animation Classes */
+.wow {
+  visibility: hidden;
+}
+
+.wow.fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  visibility: visible;
+}
+
+/* Animation Delays */
+[data-wow-duration="1400ms"] { animation-duration: 1.4s; }
+[data-wow-duration="1500ms"] { animation-duration: 1.5s; }
+[data-wow-duration="1600ms"] { animation-duration: 1.6s; }
+[data-wow-duration="1700ms"] { animation-duration: 1.7s; }
+[data-wow-duration="1800ms"] { animation-duration: 1.8s; }
+
