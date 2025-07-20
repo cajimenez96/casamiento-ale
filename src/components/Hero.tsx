@@ -65,12 +65,12 @@ const heroRef = useRef<HTMLElement>(null);
               
               {/* Names */}
               <div className="slide-title wow fadeInUp" data-wow-duration="1500ms">
-                <h2>James & Amelia</h2>
+                <h2>Alejandro y Candelaria</h2>
               </div>
               
               {/* Subtitle and Date */}
               <div className="slide-text wow fadeInUp" data-wow-duration="1600ms">
-                <p>We Are Getting Married May 1, 2026</p>
+                <p>Nos casamos el 1 de Mayo del 2026</p>
               </div>
               
               {/* Countdown Timer */}
@@ -95,7 +95,7 @@ const heroRef = useRef<HTMLElement>(null);
               {/* Background Shape */}
               <div className="bg-shape">
                 <div className="hero-image">
-                  <img src={heroImage} alt="Ale & Cande" width={300} height={471} />
+                  <img src={heroImage} alt="Ale & Cande" width={320} height={571} />
                 </div>
               </div>
               

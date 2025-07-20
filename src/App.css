@@ -57,18 +57,18 @@ Hero Section Styles
 
 /* Names */
 .slide-title h2 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  font-size: 3.5rem;
+  font-family: 'Great Vibes', cursive;
+  font-weight: 400;
+  font-size: 4rem;
   color: #2C2C2C;
   margin: 2rem 0 1rem 0;
-  line-height: 1.2;
-  letter-spacing: 1px;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
 }
 
 /* Subtitle */
 .slide-text p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-weight: 400;
   font-size: 1.1rem;
   color: #666;
@@ -105,7 +105,8 @@ Hero Section Styles
   font-size: 2.2rem;
   font-weight: 600;
   color: #9CAF88;
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Jost', sans-serif; */
+  font-family: 'Great Vibes';
   line-height: 1;
   margin-bottom: 0.5rem;
 }
@@ -113,7 +114,7 @@ Hero Section Styles
 .box span {
   font-size: 0.85rem;
   color: #666;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -134,7 +135,7 @@ Hero Section Styles
   position: relative;
   width: 100%;
   max-width: 500px;
-  height: 600px;
+  height: 680px;
 }
 
 /* Background Shape */
@@ -143,7 +144,7 @@ Hero Section Styles
   width: 100%;
   height: 100%;
   background-image: url('../src/assets/img/bg-shape.png');
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 1;
@@ -163,8 +164,6 @@ Hero Section Styles
 
 .hero-image img {
   display: block;
-  /* width: 100%; */
-  /* height: 100%; */
   object-fit: cover;
 }
 
@@ -183,37 +182,37 @@ Hero Section Styles
 }
 
 .corner-top-left {
-  top: 10px;
-  left: 50px;
-  width: 100px;
-  height: 100px;
+  top: 2%;
+  left: 12%;
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .corner-top-right {
-  top: 10px;
-  right: 30px;
-  width: 100px;
-  height: 100px;
+  top: 2%;
+  right: 3%;
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .corner-bottom-left {
-  bottom: 40px;
-  left: 60px;
-  width: 100px;
-  height: 100px;
+  bottom: 8%;
+  left: 10%;
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .corner-bottom-right {
-  bottom: 100px;
-  right: 100px;
-  width: 231px;
-  height: 180px;
+  bottom: 15%;
+  right: 12%;
+  max-width: 250px;
+  max-height: 200px;
 }
 
 /* Responsive Design */
 @media (max-width: 1200px) {
-  .hero-names {
-    font-size: 3rem;
+  .slide-title h2 {
+    font-size: 3.5rem;
   }
   
   .countdown-number {
@@ -221,13 +220,17 @@ Hero Section Styles
   }
   
   .corner-shape {
-    width: 80px;
-    height: 80px;
+    width: 6%;
+    height: 6%;
+    min-width: 50px;
+    min-height: 50px;
   }
   
   .corner-bottom-right {
-    width: 120px;
-    height: 100px;
+    width: 15%;
+    height: 12%;
+    min-width: 120px;
+    min-height: 80px;
   }
 }
 
@@ -244,12 +247,12 @@ Hero Section Styles
   
   .hero-image-column {
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     padding: 1rem;
   }
   
-  .hero-names {
-    font-size: 2.5rem;
+  .slide-title h2 {
+    font-size: 3rem;
   }
   
   .countdown-grid {
@@ -261,8 +264,11 @@ Hero Section Styles
   }
   
   .corner-shape {
-    width: 80px;
-    height: 80px;
+    width: 5%;
+    height: 5%;
+    min-width: 40px;
+    min-height: 40px;
+    display: none;
   }
 }
 
@@ -273,12 +279,12 @@ Hero Section Styles
     height: 50vh;
   }
   
-  .hero-names {
-    font-size: 2rem;
+  .slide-title h2 {
+    font-size: 2.5rem;
     margin: 1rem 0 0.5rem 0;
   }
   
-  .hero-subtitle {
+  .slide-text p {
     font-size: 1rem;
     margin-bottom: 1.5rem;
   }
@@ -296,19 +302,23 @@ Hero Section Styles
   }
   
   .corner-shape {
-    width: 60px;
-    height: 60px;
+    width: 4%;
+    height: 4%;
+    min-width: 30px;
+    min-height: 30px;
   }
   
   .corner-bottom-right {
-    width: 90px;
-    height: 70px;
+    width: 12%;
+    height: 10%;
+    min-width: 80px;
+    min-height: 60px;
   }
 }
 
 @media (max-width: 576px) {
-  .hero-names {
-    font-size: 1.8rem;
+  .slide-title h2 {
+    font-size: 2rem;
   }
   
   .countdown-grid {
@@ -324,13 +334,17 @@ Hero Section Styles
   }
   
   .corner-shape {
-    width: 50px;
-    height: 50px;
+    width: 3%;
+    height: 3%;
+    min-width: 25px;
+    min-height: 25px;
   }
   
   .corner-bottom-right {
-    width: 75px;
-    height: 60px;
+    width: 10%;
+    height: 8%;
+    min-width: 60px;
+    min-height: 50px;
   }
 }
 
