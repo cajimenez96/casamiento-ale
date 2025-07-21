@@ -6,14 +6,14 @@ import './App.css';
 
 function App() {
   return (
-    <div style={{ padding: 0, margin: 0 }}>
+    <>
       <div style={{ marginTop: 20, marginBottom: 10 }}>
         <Hero />
       </div>
       <div style={{ marginTop: 20, marginBottom: 10 }}>
         <EventSchedule />
       </div>
-    </div>
+    </>
   );
 }
 

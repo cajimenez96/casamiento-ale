@@ -85,7 +85,6 @@ const heroRef = useRef<HTMLElement>(null);
                 <img src={shape2} alt="" width={223} height={221} />
               </div>
               
-              <div className="clearfix"></div>
             </div>
           </div>
 

@@ -24,9 +24,9 @@ const EventSchedule: React.FC = () => {
 
         {/* Main Content */}
         <div className="row justify-content-center">
-          <div className="col-lg-6 col-md-6 col-sm-12 mb-4">
+          <div className="col-lg-6 col-md-6 col-sm-12 mb-4 mt-4 mt-md-0 mb-5 mb-md-0">
             {/* Decorative Header */}
-            <div className="mx-auto mb-5 decorative-circle d-flex flex-column align-items-center justify-content-center position-relative">
+            <div className="mx-auto mb-5 pb-5 mt-4 mt-md-0 decorative-circle d-flex flex-column align-items-center justify-content-center">
               <RingsAnimation width={200} height={200} />
             </div>
             {/* Ceremonia Column */}
@@ -72,9 +72,9 @@ const EventSchedule: React.FC = () => {
             </div>
           </div>
 
-          <div className="col-lg-6 col-md-6 col-sm-12 mb-4">
+          <div className="col-lg-6 col-md-6 col-sm-12 mb-4 mt-5 mt-md-0">
             {/* Decorative Header */}
-            <div className="mx-auto mb-5 decorative-circle d-flex flex-column align-items-center justify-content-center">
+            <div className="mx-auto mb-5 pb-md-5 mt-4 mt-md-0 decorative-circle d-flex flex-column align-items-center justify-content-center">
               <FlourishAnimation width={200} height={200} />
             </div>
             {/* Celebración Column */}
