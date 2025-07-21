@@ -1,14 +1,20 @@
 import Hero from './components/Hero';
+import EventSchedule from './components/EventSchedule';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './App.css';
 
 function App() {
   return (
-    <>
-      <Hero />
-    </>
+    <div style={{ padding: 0, margin: 0 }}>
+      <div style={{ marginTop: 20, marginBottom: 10 }}>
+        <Hero />
+      </div>
+      <div style={{ marginTop: 20, marginBottom: 10 }}>
+        <EventSchedule />
+      </div>
+    </div>
   );
 }
 
-export default App
+export default App;

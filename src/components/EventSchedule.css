@@ -1,0 +1,123 @@
+/* Custom styles for EventSchedule component */
+.decorative-circle {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #d4c4a8;
+  border-radius: 50%;
+  background-color: #faf8f3;
+  position: relative;
+}
+
+.hearts-container {
+  top: -10px;
+  right: -10px;
+}
+
+.connecting-lines {
+  gap: 0.5rem;
+}
+
+.line {
+  width: 60px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.blue-line {
+  background-color: #007bff;
+}
+
+.gold-line {
+  background-color: #d4c4a8;
+}
+
+/* Event Columns */
+.event-column {
+  margin-top: 3rem;
+  height: 100%;
+}
+
+.event-header h3 {
+  background: #4a4a4a;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  position: relative;
+  clip-path: polygon(0 0, 95% 0, 100% 50%, 95% 100%, 0 100%, 5% 50%);
+  font-family: 'Jost', sans-serif;
+}
+
+/* Event Details */
+.label {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #333;
+  font-family: 'Jost', sans-serif;
+}
+
+.value {
+  font-size: 1rem;
+  color: #666;
+  font-family: 'Jost', sans-serif;
+  line-height: 1.4;
+}
+
+/* Custom button styling */
+.btn-outline-secondary {
+  border-color: #d4c4a8;
+  color: #666;
+  background-color: #faf8f3;
+  transition: all 0.3s ease;
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #e8e0d0;
+  border-color: #c4b498;
+  color: #555;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline-secondary:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .decorative-circle {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .line {
+    width: 40px;
+  }
+  
+  .event-column {
+    padding: 1.5rem;
+  }
+  
+  .event-header h3 {
+    font-size: 1.1rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .decorative-circle {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .line {
+    width: 30px;
+  }
+  
+  .event-column {
+    padding: 1rem;
+  }
+} 
